@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	background-image: linear-gradient(to top, #6F9CDE,#4169E1);
+	min-height: 100vh;
+}
+
+
+
+
+.topmenu {
+	
+	background-color: lightblue;
+	overflow: hidden;
+	cursor: pointer;
+	
+}
+
+
+.topmenu a {
+	
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px; 
+	text-decoration: none;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.navbar a:hover {
+	color: grey;
+	transition: .3;
+	
+}
