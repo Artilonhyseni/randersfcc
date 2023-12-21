@@ -9,32 +9,11 @@
 }
 
 
-
-
-.topmenu {
+.logo {
 	
-	background-color: lightblue;
-	overflow: hidden;
-	cursor: pointer;
-	
-}
+	width: 300px;
+	height: auto;
 
-
-.topmenu a {
-	
-	float: right;
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 20px; 
-	text-decoration: none;
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-}
-
-.navbar a:hover {
-	color: grey;
-	transition: .3;
-	
 }
 
 
