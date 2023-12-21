@@ -4,16 +4,45 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	background-image: linear-gradient(to top, #6F9CDE,#4169E1);
-	min-height: 100vh;
+	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+Body {
+	margin: 0px;
+	padding: 0px;
+	background: rgb(65,105,225);
+	background-image: linear-gradient(to bottom, #6F9CDE,#4169E1);
+	background-repeat: no-repeat
+	
+	
 }
 
 
-.logo {
-	
-	width: 300px;
-	height: auto;
+img {
+  height: 100px;
 
+}
+
+.top-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	padding: 5px;
+}
+
+.menu {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+
+a {
+padding: 5px;
+color: white;
+text-decoration: none;
+	
 }
 
 
