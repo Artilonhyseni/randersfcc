@@ -4,15 +4,16 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	font-family:  Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 Body {
 	margin: 0px;
 	padding: 0px;
 	background: rgb(65,105,225);
-	background-image: linear-gradient(to bottom, #6F9CDE,#4169E1);
-	background-repeat: no-repeat
+	background-image: url("img/Intro.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	
 	
 }
@@ -30,13 +31,15 @@ img {
 	justify-content: space-between;
 	height: 100px;
 	padding: 5px;
-	background: #4357BA;
+	background: transparent;
+	
 }
 
 .menu {
 display: flex;
 flex-direction: row;
 list-style-type: none;
+position: relative;
 }
 
 a {
@@ -46,13 +49,20 @@ text-decoration: none;
 	
 }
 
+
+
+
+
+
 .menu a:hover {
-	background-color: rgba(88,109,214,1.00);	
+  background: rgba(255,255,255,0.25);
+  
+  
 }
 
-.submenu {
-	opacity: 0;
-	pointer-events: none;
-	
-	
-}
+
+
+
+
+
+
