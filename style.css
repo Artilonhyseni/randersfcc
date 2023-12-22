@@ -4,7 +4,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	font: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-family:  Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 Body {
@@ -30,6 +30,7 @@ img {
 	justify-content: space-between;
 	height: 100px;
 	padding: 5px;
+	background: #4357BA;
 }
 
 .menu {
@@ -45,4 +46,13 @@ text-decoration: none;
 	
 }
 
+.menu a:hover {
+	background-color: rgba(88,109,214,1.00);	
+}
 
+.submenu {
+	opacity: 0;
+	pointer-events: none;
+	
+	
+}
