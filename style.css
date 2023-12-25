@@ -100,8 +100,9 @@ text-decoration: none;
 }
 
 
-.container {
+.container  {
 	display: flex;
+	
 	align-content: center;
 	justify-content: center;
 	padding-top: 800px;
@@ -109,12 +110,29 @@ text-decoration: none;
 }
 
 
-.nyhedsbillede {
-	display: flex;
+.column {
+    display: flex;
 	justify-content: center;
-    align-content: center;
-	height: 190px;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+.column img {
+    height: 150px;
+	border: 2px solid;
+	border-radius: 13px;
+	box-shadow: 4px 7px 7px 0px #00000042;
+	cursor: pointer;
+	margin: 10px;
+	transition: 400ms;
+}
+
+.column img:hover {
+	filter: grayscale(1);
+	transform: scale(1.03);
 	
 }
+	
 
 
