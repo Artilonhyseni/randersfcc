@@ -10,11 +10,10 @@
 Body {
 	margin: 0px;
 	padding: 0px;
-	background: rgb(65,105,225);
 	background-image: url("img/Intro.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 	
 	
@@ -97,6 +96,7 @@ text-decoration: none;
 	margin-top: -100px;
 	clear: both;
 	
+	
 }
 
 
@@ -116,6 +116,8 @@ text-decoration: none;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 5px;
+	margin-top: 350px;
+	
 }
 
 .column img {
@@ -126,6 +128,7 @@ text-decoration: none;
 	cursor: pointer;
 	margin: 10px;
 	transition: 400ms;
+	
 }
 
 .column img:hover {
@@ -133,6 +136,15 @@ text-decoration: none;
 	transform: scale(1.03);
 	
 }
+
+.sponsor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
+}
 
-
+.sponsor img {
+	height: 70px;
+	
+}
