@@ -12,9 +12,8 @@ Body {
 	padding: 0px;
 	background-image: url("img/Intro.png");
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-position: center;
 	
 	
 }
@@ -116,7 +115,7 @@ text-decoration: none;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 5px;
-	margin-top: 350px;
+	margin-top: 700px;
 	
 }
 
@@ -145,6 +144,6 @@ text-decoration: none;
 }
 
 .sponsor img {
-	height: 70px;
+	height: 80px;
 	
 }
