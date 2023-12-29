@@ -139,6 +139,19 @@ text-decoration: none;
 	
 }
 
+<!--->.tekst1 {
+	
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+	
+}
+
 .sponsor {
 	display: flex;
 	justify-content: center;
@@ -150,4 +163,6 @@ text-decoration: none;
 	height: 80px;
 	
 }
+
+
 
