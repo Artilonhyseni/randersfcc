@@ -9,8 +9,6 @@
 }
 
 Body {
-	margin: 0px;
-	padding: 0px;
 	background-image: url("img/Intro.png");
 	background-size: cover;
 	background-attachment: scroll;
@@ -165,4 +163,27 @@ text-decoration: none;
 }
 
 
+#ul1 {
+	list-style: none;
+	
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 15px;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 500px;
+	position: relative;
+}
 
