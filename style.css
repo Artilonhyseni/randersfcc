@@ -30,6 +30,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
+	width: 100%;
 	
 	
 	
@@ -51,7 +52,6 @@ img {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	height: 100px;
 	padding: 5px;
 	background: transparent;
 	
@@ -64,6 +64,13 @@ flex-direction: row;
 list-style-type: none;
 position: relative;
 }
+
+.menu li {
+	display: none;
+	
+}
+
+
 
 a {
 padding: 5px;
@@ -287,9 +294,180 @@ i:hover {
 }
 
 
+	
+	
+
+
+.menu-box {
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.icon, .icon::before, .icon::after {
+	display: block;
+	background: white;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	border-radius: 2px;
+	transition: transform 400ms;
+
+}
+
+.icon::before {
+	content: "";
+	margin-top: -8px;
+}
+
+.icon::after {
+	content: "";
+	margin-top: 8px;
+	
+}
+
+#activate:checked + .menu-box .icon::before {
+	
+	margin-top: 0;
+	transform: rotate(45deg);
+	
+}
+
+#activate:checked + .menu-box .icon::after {
+	margin-top: 0;
+	transform: rotate(-45deg);
+	
+}
+
+#activate:checked + .menu-box .icon {
+	background: rgba(96,53,53,0);
+	
+}
+
+#activate {
+	display: none;
+
+}
 
 
 
+@media screen and (max-width: 700px) {
+	
+	.menu-box {
+		position: absolute;
+		display: flex;
+        right: 10px;
+        top: 20px;
+		z-index: 10;
+		
+	}
+	
+	.menu a {
+		opacity: 0;
+		max-height: 0;
+		overflow:hidden;
+		transition: opacity 0.5s, max-height 0.5s;
+		
+	}
+	
+	#activate:not(:checked) ~ .menu a {
+        display: none;
+		opacity: 0;
+    }
+	
+	
+	
+	   #activate:checked ~ .menu {
+       
+        position: fixed; 
+        left: 0; 
+        right: 0; 
+    }
+	
+	#activate:checked ~ .menu a {
+        opacity: 1;
+		max-height: 40px;
+      
+    }
+	
+	 #activate:checked ~ .menu li {
+        display: block;
+        text-align: center; 
+    }
+	
+	.top-bar img {
+		margin-top: 30px;
+		
+	}
+	
+	.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	width: 100%;
 
+	}
+	#activate ~ .menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms;
+		
+	}
+	
+	 .top-bar {
+      position: relative;
+    }
+	
+	 .column, .sponsor {
+        flex-direction: column;
+    }
+	
+	.column img, .sponsor img {
+        margin: 10px auto;
+    }
+	
+	.main {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+	
+	 .columns {
+        column-count: 1;
+    }
+}
+	
+	
+	#activate:checked ~ .menu li {
+		display: flex;
+		border: 1px solid #FFFFFF;
+		height: 40px;
+		padding: 5px;
+		transition: height 400ms;
+		background: #6495ED;
+		
+	}
+	
+	.menu li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 5px;
+		width: 100%;
+		
+		
+	}
+
+
+	
+	
 
 
